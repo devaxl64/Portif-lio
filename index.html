@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio de Axel</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  
+  
+  
+  <div class="resume">
+    
+    <!-- BOTÃO DARK MODE (opcional) -->
+    <button class="toggle-theme" id="themeBtn">
+      🌙
+    </button>
+    
+    <!-- COLUNA DIREITA -->
+    <aside class="sidebar">
+
+      <div class="profile-card">
+        <div class="photo">
+          <img src="images/Axel500x500.png" alt="Foto de Axel">
+        </div>
+
+        <!-- Nome -->
+        <h1 id="name">Axel Castro</h1>
+        <span class="role">Futuro Dev Jr • TI</span>
+
+        <!-- Apresentaçao -->
+        <p class="info">Brasileiro • Solteiro</p>
+        <p class="info">03/06/1996</p>
+      </div>
+
+      <section class="card">
+        <h2>Contato</h2>
+
+        <!-- Endereço -->
+        <ul>
+          <li>
+            <a href="https://www.google.com/maps/place/S%C3%A3o+Mateus,+S%C3%A3o+Paulo+-+SP/@-23.6720961,-46.5047035,14.17z/data=!4m6!3m5!1s0x94ce67d20ba38873:0x5137128655a7611f!8m2!3d-23.6018021!4d-46.4708268!16s%2Fm%2F027ttbk?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
+              target="_blank">
+              <img class="icon" src="images/mapspin48x48.png" alt="Localização">
+            </a>
+          </li>
+          <li>
+            <a onclick="copiarEndereco(event)">
+              <span>São Mateus - Zona Leste - SP</span>
+              <img class="copy" src="images/copyicon48x48.png" alt="Copiar Endereço">
+            </a>
+          </li>
+        </ul>
+
+        <!-- Telefone / Whats -->
+        <ul>
+          <li>
+            <a href="tel:11971582528" target="_blank">
+              <img id="telephone" class="icon" src="images/telephoneicon48x48.png" alt="Telefone Celular">
+            </a>
+          </li>
+          <li><a href="https://wa.me/5511971582528/" target="_blank"><img class="icon" src="images/whatsicon-w48x48.png"
+                alt="Whats"></a>
+          </li>
+          <li>
+            <a onclick="copiarTelefone(event)">
+              <span>(11) 97158-2528</span>
+              <img class="copy" src="images/copyicon48x48.png" alt="Copiar Telefone">
+          </li>
+          </a>
+        </ul>
+
+        <!-- Email -->
+        <ul>
+          <li>
+            <a href="mailto:marcell3764@gmail.com" target="_blank"><img class="icon" src="images/gmailicon48x48.png"
+                alt="Whats"></a>
+          </li>
+          <li>
+            <a onclick="copiarEmail(event)">
+              <span>marcell3764@gmail.com</span>
+              <img class="copy" src="images/copyicon48x48.png" alt="Copiar E-mail">
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Portfólio</h2>
+        <ul id="links">
+          <li>
+            <a href="https://www.linkedin.com/in/marcellaxel" target="_blank">LinkedIn
+              <img class="copy" src="images/targetnewtabicon-b48x48.png" alt="Copiar E-mail">
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/devaxl64" target="_blank">GitHub
+              <img class="copy" src="images/targetnewtabicon-b48x48.png" alt="Copiar E-mail">
+            </a>
+          </li>
+
+        </ul>
+      </section>
+
+      <!-- Conhecimentos -->
+      <section class="card">
+        <h2>Conhecimentos Técnicos</h2>
+
+        <h3>Lang | Banco de Dados</h3>
+
+        <div class="skill" data-tooltip="Java: 60% - Conhecimento em POO">
+          <span>Java</span>
+          <div class="bar">
+            <div class="fill level-intermediate"></div>
+          </div>
+        </div>
+
+        <div class="skill" data-tooltip="MySQL: 60% - Queries complexas e Joins">
+          <span>MySQL</span>
+          <div class="bar">
+            <div class="fill level-intermediate"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span>C#</span>
+          <div class="bar">
+            <div class="fill level-basic"></div>
+          </div>
+        </div>
+
+        <h3>Front-End</h3>
+
+        <div class="skill">
+          <span>HTML</span>
+          <div class="bar">
+            <div class="fill level-basic"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span>CSS</span>
+          <div class="bar">
+            <div class="fill level-basic"></div>
+          </div>
+        </div>
+
+        <h3>Ferramentas & Sistemas</h3>
+
+        <div class="skill">
+          <span>Linux</span>
+          <div class="bar">
+            <div class="fill level-basic"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span>Git & GitHub</span>
+          <div class="bar">
+            <div class="fill level-intermediate"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span>Office</span>
+          <div class="bar">
+            <div class="fill level-advanced"></div>
+          </div>
+        </div>
+
+        <section class="card">
+          <h2>Idiomas</h2>
+          <p>Inglês Técnico</p>
+
+          <div class="skill">
+            <span>Básico</span>
+            <div class="bar">
+              <div class="fill level-basic"></div>
+            </div>
+          </div>
+        </section>
+
+    </aside>
+
+    <!-- COLUNA ESQUERDA -->
+    <main class="content">
+
+      <section class="card">
+        <h2>Perfil Profissional</h2>
+        <p>
+          Futuro Dev Jr. Estudante de TI com forte bagagem em Banco de Dados e Java.
+          Possuo como diferencial a paciência, positividade e boa oratória,
+          facilitando a comunicação assertiva devido à experiência em atendimento ao público.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Formação Escolar</h2>
+        <ul>
+          <li><strong>Análise e Desenvolvimento de Sistemas</strong> — 1/5 Sem.</li>
+          <li><strong>Técnico em Desenvolvimento de Sistemas</strong> — 3/4 Sem. (Incompleto)</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Habilidades Comportamentais</h2>
+        <ul>
+          <li>Atenção aos detalhes para detectar códigos mal escritos</li>
+          <li>Capacidade de atuar coletivamente na solução de problemas</li>
+          <li>Boa didática e desenvoltura para transcrever informações</li>
+        </ul>
+      </section>
+
+      </section>
+
+      <section class="card">
+        <h2>Experiência Profissional</h2>
+        <p><strong>Analista de Suporte Técnico</strong></p>
+        <p>Atento – Brasil</p>
+        <p class="muted">Permanência: 1 ano</p>
+        <p>
+          Atendimento ao cliente PF e PJ, suporte online de equipamentos
+          (notebooks e desktops), abertura de chamados e utilização do pacote Office.
+        </p>
+      </section>
+
+    </main>
+  </div>
+
+</body>
+
+</html>
