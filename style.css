@@ -188,17 +188,22 @@ html body {
 .card h2 {
   color: var(--primary);
   margin-bottom: 12px;
-}
-.card h3 {
-  margin: 15px 0 8px;
-  font-size: 15px;
-
+  
   display: flex;
   width: 100%; 
   gap: 10px; /* Espaçamento opcional entre os elementos */
   flex-wrap: wrap; /* Permite que a barra mude de linha */
   align-items: center; /* Alinha verticalmente span e imagem */
   justify-content: space-between; /* Empurra o span para esquerda e img para direita */
+}
+.card h3 {
+  margin: 15px 0 8px;
+  font-size: 15px;
+}
+.graduacao li {
+  /* margin-bottom: 6px; */
+  display: flex;
+  flex-direction: column;
 }
 .card #sobre {
   order: 1;
@@ -221,7 +226,7 @@ html body {
   /* font-weight: bold; */
 }
 .skill .copy {
-  width: 16px;
+  width: 24px;
   height: auto;
 }
 .bar {
@@ -241,6 +246,7 @@ html body {
 /* NÍVEIS */
 .level-basic1 { width: 22%; }
 .level-basic2 { width: 35%; }
+.level-basic3 { width: 40%; }
 .level-intermediate1 { width: 60%; }
 .level-intermediate2 { width: 68%; }
 .level-intermediate3 { width: 75%; }
@@ -253,6 +259,20 @@ html body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.spacer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 50px;
+  /* align-items: center; */
+  /* justify-content: start; */
+  
+}
+.spacer > div { 
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 4;
 }
 
 ul {
