@@ -135,7 +135,6 @@ html body {
   width: 16px;
   height: 16px;
 }
-
 .copy {
   width: 9px;
   height: 9px;
@@ -171,18 +170,14 @@ html body {
   text-transform: none;
   text-decoration-color: none;
 
-  text-shadow: #121212;
-  color:var(--shadow);  
   transition: 
-  transform .25s ease
-  /* ,box-shadow .25s ease */
-  ;
+  transform .05s ease;
 } 
 .card a:hover {
-  transform: translateY(-6px);
-  /* box-shadow: 0 10px 22px rgba(0,0,0,0.15); */
+  transform:  translateY(-9px); 
   transform: scale(1.06);
   cursor: pointer;
+  /* box-shadow: 0 10px 22px rgba(0,0,0,0.15); */
 
 }
 .card h2 {
