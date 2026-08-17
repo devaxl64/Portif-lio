@@ -25,7 +25,7 @@ function toggleTheme() {
 function copiarEndereco(event) {
     if (event) event.preventDefault();
 
-    const texto = "São Mateus - Zona Leste - SP";
+    const texto = "Vila Formosa - Zona Leste - SP";
 
     navigator.clipboard.writeText(texto).then(() => {
         // Criar o aviso
