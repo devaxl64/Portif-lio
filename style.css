@@ -178,19 +178,6 @@ html body {
   transform: scale(1.06);
   cursor: pointer;
   /* box-shadow: 0 10px 22px rgba(0,0,0,0.15); */
-  
-div > p > a {
-  text-decoration: none;
-  text-transform: none;
-  text-decoration-color: none;
-
-  transition: 
-  transform .05s ease;
-} 
-div > p > a:hover {
-  transform:  translateY(-9px); 
-  transform: scale(1.06);
-  cursor: pointer;
 
 }
 .card h2 {
