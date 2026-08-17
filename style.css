@@ -177,8 +177,9 @@ html body {
   transform:  translateY(-9px); 
   transform: scale(1.06);
   cursor: pointer;
+  /* box-shadow: 0 10px 22px rgba(0,0,0,0.15); */
   
-.project-link a {
+.card>div>p>a {
   text-decoration: none;
   text-transform: none;
   text-decoration-color: none;
@@ -186,11 +187,10 @@ html body {
   transition: 
   transform .05s ease;
 } 
-.project-link a:hover {
+.card>div>p>a:hover {
   transform:  translateY(-9px); 
   transform: scale(1.06);
   cursor: pointer;
-  /* box-shadow: 0 10px 22px rgba(0,0,0,0.15); */
 
 }
 .card h2 {
